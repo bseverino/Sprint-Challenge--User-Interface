@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1px solid gray;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -202,11 +202,35 @@ header a{
 
 button {
     margin-top: 20px;
-    padding: 5px 20px;
+    padding: 7px 20px;
     background: white;
     border: 2px solid black;
     border-radius: 7px;
     font-size: 16px;
+}
+
+.middle-content-contact {
+    padding: 20px 2%;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.form {
+    width: 48%;
+}
+
+input {
+    width: 100%;
+    margin: 2%;
+}
+
+.message {
+    height:150px;
+}
+
+.form button {
+    margin: 10px 2%;
+    text-align: center;
 }
 
 .bottom-content {
@@ -221,6 +245,10 @@ button {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bottom-content-about {
+    padding: 15px 2% 40px;
 }
 
 footer {
