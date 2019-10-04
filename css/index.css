@@ -213,30 +213,42 @@ button {
     padding: 20px 2%;
     padding-bottom: 20px;
     border-bottom: 1px dashed black;
+    display: flex;
+    justify-content: space-between;
 }
 
 .form {
     width: 48%;
 }
 
+.address {
+    width: 35%;    
+}
+
 input {
     width: 100%;
-    margin: 2%;
+    margin: 2% 0;
 }
 
 .message {
-    height:150px;
+    height: 150px;
+    width: 100%;
+    margin: 2% 0;
 }
 
 .form button {
-    margin: 10px 2%;
-    text-align: center;
+    margin: 10px 0;
 }
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+address {
+    line-height: 25px;
+    padding-left: 5px;
 }
 
 .bottom-content .text-container {
