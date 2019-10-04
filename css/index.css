@@ -115,7 +115,7 @@ header a{
     text-decoration: none;
 }
 
-a:hover{
+header a:hover, footer a:hover{
     color:teal;
 }
 
@@ -252,6 +252,7 @@ button {
 button:hover {
     background:teal;
     color:white;
+    cursor:pointer;
 }
 
 .middle-content-contact {
