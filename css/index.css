@@ -71,6 +71,58 @@ p {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+}
+
+.nav-bar {
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 30px;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .logo {
+        padding-bottom: 20px;
+    }
+}
+
+header{
+    padding: 10px 0 20px 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover{
+    color:teal;
+}
+
+.header-img {
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,10 +131,22 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content-about {
+    padding: 0 2%;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+@media only screen and (max-width: 800px) {
+    .top-content .text-container {
+        width: 100%;  
+    }
 }
 
 .middle-content {
@@ -102,14 +166,137 @@ p {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
-    display: flex;
+    display: flex;    
     align-items: center;
     justify-content: center;
+}
+
+.box1 {
+    background: teal;
+}
+
+.box2 {
+    background: gold;
+}
+
+.box3 {
+    background: cadetblue;
+}
+
+.box4 {
+    background: coral;
+}
+
+.box5 {
+    background:crimson;
+}
+
+.box6 {
+    background: forestgreen;
+}
+
+.box7 {
+    background: darkorchid;
+}
+
+.box8 {
+    background: hotpink;
+}
+
+.box9 {
+    background: indigo;
+}
+
+.box10 {
+    background: dodgerblue;
+}
+
+.middle-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-box {
+    width: 46%;
+    margin: 25px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.about-box img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 7px 20px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button:hover {
+    background:teal;
+    color:white;
+    cursor:pointer;
+}
+
+.middle-content-contact {
+    padding: 20px 2%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    width: 48%;
+}
+
+.address {
+    width: 35%;    
+}
+
+input {
+    width: 100%;
+    margin: 2% 0;
+}
+
+.message {
+    height: 150px;
+    width: 100%;
+    margin: 2% 0;
+}
+
+.form button {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .middle-content-contact {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .address {
+        margin-top: 20px;
+    }
 }
 
 .bottom-content {
@@ -118,12 +305,21 @@ p {
     justify-content: space-around;
 }
 
+address {
+    line-height: 25px;
+    padding-left: 5px;
+}
+
 .bottom-content .text-container {
     padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bottom-content-about {
+    padding: 15px 2% 40px;
 }
 
 footer {
@@ -143,4 +339,11 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        display: flex;
+        justify-content: center;
+    }
 }
